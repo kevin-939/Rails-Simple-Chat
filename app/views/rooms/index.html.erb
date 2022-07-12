@@ -18,8 +18,10 @@
         </div>
       </div>
     </div>
-    <div class="col-md-10 bg-dark">
-      #The chat box stays here
+    <div class="col-md-10 bg-dark text-light">
+      <% if @single_room %>
+        <h4 class="text-center"> <%= @single_room.name %> </h4>
+      <% end %>
     </div>
   </div>
 </div>
