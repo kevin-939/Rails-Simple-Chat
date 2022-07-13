@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container mt-2">
   <div class="row">
     <div class="col-md-2">
       <h5> Hi <%= @current_user.username %> </h5>
@@ -18,12 +18,13 @@
         </div>
       </div>
     </div>
-    <div class="col-md-10 bg-dark text-light">
+    <div class="col-md-10 bg-dark text-light d-flex flex-column justify-content-between pr-3">
+    <!--If room has been selected-->
       <% if @single_room %>
         <h4 class="text-center"> <%= @single_room.name %> </h4>
         <%= turbo_stream_from @single_room %>
-        <div id="messages">
-        <%= render @messages %>
+        <div id="messages" class="overflow-auto">
+          <%= render @messages %>
         </div>
         <%= render partial: 'layouts/new_message_form' %>
       <% end %>
