@@ -72,3 +72,5 @@ group :test do
 end
 
 gem "sass-rails", "~> 6.0"
+
+gem "bootstrap", "~> 5.1"
