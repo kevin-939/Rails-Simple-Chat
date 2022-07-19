@@ -1,6 +1,7 @@
 <%= form_for (:session) do |f| %>
   <%= f.label :username, 'Enter your username' %>
   <%= f.text_field :username, autocomplete: 'off' %>
-  <%= f.submit 'Sign in' %>
+  <%= submit_tag 'Sign in' %>
+  <%= submit_tag 'Register', :name => 'register_button' %>
 <% end %>
 <%= render partial: "layouts/notification" %>

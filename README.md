@@ -10,3 +10,20 @@ This is rails project to create simple chat. You are expected to have redis-serv
 * Rails 7.0.3
 * Redis 5.0.7
 * Ubuntu 20.04.4 LTS
+
+# Todo list
+* Room
+    * Leave room
+    * Delete Room
+    * Change room name
+    * Invite user
+* User
+    * Change name
+* Participant
+    * CRUD role
+* Message
+    * Update 
+    * Delete
+* Style
+* Replace redis
+* Test
